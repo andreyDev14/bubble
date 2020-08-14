@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<!-- <link rel="manifest" href="assets/img/favicon/site.webmanifest"> -->
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Общие стили -->
+	<link rel="stylesheet" href="assets/css/vendor.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Уборка всех видов помещений</title>
+</head>
+
+<body>
+
+	<!-- main -->
+	<main>
+
+		<!-- header -->
+		<header class="header margin">
+			<div class="header__top-wrapper">
+				<div class="container">
+					<div class="row header__top">
+						<div class="col-10 col-md-4 col-lg-3 header__left">
+							<div class="scroll">
+								<a href="#home" class="scroll logo-wrapper">
+									<div class="logo-icon">
+										<picture>
+											<source srcset="assets/img/logo.svg" type="image/webp"><img src="assets/img/logo.svg" alt="logo"
+												width="32" class="logo"></picture>
+									</div>
+									<div class="right">
+										<p>Bubble Fresh</p>
+										<small>Клининг у Вас дома!</small>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-2 col-md-8 col-lg-9 header__right">
+							<div class="header__mobile">
+								<div class="nice-select-wrapper">
+									<small>Ваш город:</small>
+									<div class="nice-select" tabindex="0"><span class="current">Санкт-Петербург</span>
+										<ul class="list">
+											<li data-value="Санкт-Петербург" data-display="Санкт-Петербург" class="option selected">
+												Санкт-Петербург
+											</li>
+											<li data-value="1" class="option">
+												Санкт-Петербург
+											</li>
+											<li data-value="2" class="option">
+												Санкт-Петербург
+											</li>
+										</ul>
+									</div>
+								</div>
+								<ul class="menu header__menu">
+									<li><a href="#advantages">Преимущества</a></li>
+									<li><a href="#prices">Прайс</a></li>
+									<li><a href="#plans">Виды уборки</a></li>
+									<li><a href="#footer">Контакты</a></li>
+								</ul>
+								<div class="header__call">
+									<button class="button header__button" data-toggle="modal" data-target="#popup-call">Оставить
+										заявку</button>
+									<div class="header__tel">
+										<svg class='phone'>
+											<use xlink:href='assets/sprite.svg#phone'></use>
+										</svg>
+										<a href="tel:+71111111111">+71111111111</a>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="menu-link">
+								<span class="menu-lines"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main mobile-bg" style='background-image: url(assets/img/header-bg.png)'>
+				<div class="container">
+					<h1 class="header__title">Уборка всех видов помещений</h1>
+					<div class="header__subtitle"><span>в Петербурге</span> от команды частных клинеров</div>
+					<div class="header__block">
+						<ul class="header__list">
+							<li>Уборка от 2000 рублей</li>
+							<li>Работаем 24/7</li>
+							<li>В любое удобное для Вас время <br>есть срочная уборка</li>
+							<li>Более 12 лет на рынке</li>
+						</ul>
+						<div class="form header__form">
+							<form>
+								<div class="header__range">
+									<div class="header__range-title">Какая у Вас площадь помещения?</div>
+									<div class="header__range-row">
+										<div class="min">1</div>
+										<input type="range" value="1" min="1" max="100">
+										<div class="max">100</div>
+									</div>
+								</div>
+								<span>
+									<input type="tel" name="phone" placeholder="Ваш телефон" required>
+								</span>
+								<button type="submit" class="submit button">Рассчитать
+									стоимость</button>
+							</form>
+							<small>Нажимая кнопку “Рассчитать стоимость” Вы
+								соглашаетесь на обработку данных.</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Почему мы? -->
+		<section id='advantages' class='features margin'>
+			<div class='container'>
+				<div class="features-bg mobile-bg" style='background-image: url(assets/img/features-bg.webp)'>
+					<h2 class='features__title title'>Почему мы?</h2>
+					<div class='row features-wrapper'>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='clock'>
+									<use xlink:href='assets/sprite.svg#clock'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Время</div>
+								<div class="features__item-text"> Наши клинеры экономят время клиентов. Приезжают вовремя, сразу со
+									всеми
+									необходимыми принадлежностями.
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='plant'>
+									<use xlink:href='assets/sprite.svg#plant'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Экологичность</div>
+								<div class="features__item-text"> Не используем опасные средства, которые могут навредить вам,
+									вашим питомцам или мебели.</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='gloves'>
+									<use xlink:href='assets/sprite.svg#gloves'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Клинеры</div>
+								<div class="features__item-text"> Каждый клинер — человек с опытом. Мы не берем простых людей с улицы.
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='umbrella'>
+									<use xlink:href='assets/sprite.svg#umbrella'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Страхование</div>
+								<div class="features__item-text"> Можете не переживать, что кто-то из клинеров повредит или украдет
+									ваши вещи. Мы все компенсируем.
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='warranty'>
+									<use xlink:href='assets/sprite.svg#warranty'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Гарантия качества</div>
+								<div class="features__item-text">
+									Мы дорожим своей репутацией и гарантируем, что выполним работы на высочайшем уровне.</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 features__item">
+							<div class="features__item-left">
+								<svg class='list'>
+									<use xlink:href='assets/sprite.svg#list'></use>
+								</svg>
+							</div>
+							<div class="features__item-right">
+								<div class="features__item-title">Уборка по чек листу</div>
+								<div class="features__item-text"> Не станем бесцельно ходить по вашему дому, все работы
+									ведутся с соблюдением четкого плана.</div>
+							</div>
+						</div>
+					</div>
+					<picture>
+						<source srcset="assets/img/features-img.webp" type="image/webp"><img src="assets/img/features-img.png"
+							alt="img" class="features__img"></picture>
+				</div>
+			</div>
+		</section>
+
+		<!-- Что входит в уборку? -->
+		<section id='info' class='info margin'>
+			<div class='container'>
+				<h2 class='info__title title'>Что входит в уборку?</h2>
+				<div class='row info-wrapper'>
+					<ul class="info__nav nav row" role="tablist">
+						<li class="col-12 col-md-4">
+							<a href="#tab-1" class="active" data-toggle="tab" role="tab" aria-selected="true">Комнаты</a>
+						</li>
+						<li class="col-12 col-md-4">
+							<a href="#tab-2" data-toggle="tab" role="tab" aria-selected="false">Кухня</a>
+						</li>
+						<li class="col-12 col-md-4">
+							<a href="#tab-3" data-toggle="tab" role="tab" aria-selected="false">Ванная</a>
+						</li>
+					</ul>
+					<div class="info__item fade show active" id="tab-1" role="tabpanel">
+						<div class="info__left" style='background-image: url(assets/img/clean/1.jpg)'></div>
+						<div class="info__right">
+							<div class="info__item-title">В жилых комнатах</div>
+							<ul class="info__item-list">
+								<li>Протираем все доступные поверхности, выключатели и дверные ручки</li>
+								<li>Чистим зеркала и стеклянные поверхности</li>
+								<li>Складываем одежду и расставляем вещи</li>
+								<li>Застилаем кровать</li>
+								<li>Моем пол, протираем плинтусы и пылесосим ковёр.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="info__item fade" id="tab-2" role="tabpanel">
+						<div class="info__left" style='background-image: url(assets/img/clean/1.jpg)'></div>
+						<div class="info__right">
+							<div class="info__item-title">На кухне</div>
+							<ul class="info__item-list">
+								<li>Протираем все доступные поверхности, выключатели и дверные ручки</li>
+								<li>Моем снаружи плиту, столешницу и холодильник</li>
+								<li>Чистим раковину</li>
+								<li>Моем пол и протираем плинтусы</li>
+								<li>Выносим мусор</li>
+							</ul>
+						</div>
+					</div>
+					<div class="info__item fade" id="tab-3" role="tabpanel">
+						<div class="info__left" style='background-image: url(assets/img/clean/1.jpg)'></div>
+						<div class="info__right">
+							<div class="info__item-title">В ванной</div>
+							<ul class="info__item-list">
+								<li>Протираем все доступные поверхности, выключатели и дверные ручки</li>
+								<li>Моем и дезинфицируем унитаз</li>
+								<li>Моем душевую кабину/&nbsp;ванную</li>
+								<li>Чистим зеркала и стеклянные поверхности</li>
+								<li>Моем пол, протираем шкафы</li>
+								<li>Выносим мусор</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Виды уборок -->
+		<section id='plans' class='card plans'>
+			<div class='container'>
+				<h2 class='card__title title'>Виды уборок</h2>
+				<div class='row card-wrapper plans-wrapper'>
+					<div class="col-12 col-md-6 col-xl-3 card__item plans__item">
+						<div class="card__item-img" style='background-image: url(assets/img/plans/1.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title">Поддерживающая</div>
+							<div class="card__item-text"> Протрем зеркала, вымоем полы, вынесем мусор. В общем, сделаем все,
+								что вам сделать лень или совсем некогда.
+							</div>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 card__item plans__item">
+						<div class="card__item-img" style='background-image: url(assets/img/plans/2.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title">Генеральная</div>
+							<div class="card__item-text">Вытрем пыль с техники, элементов освещения и мебели, пропылесосим ковры,
+								вынесем
+								мусор, помоем подоконники и батареи.
+							</div>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 card__item plans__item">
+						<div class="card__item-img" style='background-image: url(assets/img/plans/3.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title">Супер уборка</div>
+							<div class="card__item-text">Разгребем мусор на балконе и в шкафах, помоем полы, подоконники, люстры и
+								зеркала.
+								Вынесем мусор, протрем пыль с мебели
+							</div>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 card__item plans__item">
+						<div class="card__item-img" style='background-image: url(assets/img/plans/4.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title">После ремонта</div>
+							<div class="card__item-text">Вымоем пол, окна, подоконники. Удалим все следы стройматериалов со стен,
+								потолка и
+								полов. Уберем весь мелкий мусор.</div>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Доп услуги -->
+		<section id='offer' class='offer'>
+			<div class='container'>
+				<div class='offer-wrapper'>
+					<div class="offer__left">
+						<h2 class='offer__title title'>Нужны дополнительные услуги?</h2>
+						<div class='offer__subtitle'>Вы можете заказать любую услугу дополнительно через
+							менеджера со скидкой 10% прямо сейчас!</div>
+						<div class="form offer__form">
+							<form>
+								<div class="input-wrapper">
+									<span>
+										<input type="tel" name="phone" placeholder="Ваш телефон" required>
+									</span>
+									<button type="submit" class="submit button">Получить скидку</button>
+								</div>
+							</form>
+							<small>Нажимая кнопку “Получить скидку” Вы соглашаетесь на обработку данных.</small>
+						</div>
+					</div>
+				</div>
+				<picture>
+					<source srcset="assets/img/offer-img.webp" type="image/webp"><img src="assets/img/offer-img.png" alt="img"
+						class="offer__img"></picture>
+			</div>
+		</section>
+
+		<!-- Сколько стоит уборка -->
+		<section id='prices' class='card price margin'>
+			<div class='container'>
+				<h2 class='card__title title'>Сколько стоит уборка?</h2>
+				<div class='row card-wrapper price-wrapper'>
+					<div class="col-12 col-lg-4 card__item price__item">
+						<div class="card__item-img" style='background-image: url(assets/img/price/1.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title price__item-title">Уборка в ванной</div>
+							<ul class="card__item-list">
+								<li>Поддерживающая уборка: <b>от 50 р/м<sup>2</sup></b></li>
+								<li>Генеральная уборка: <b>от 100 р/м<sup>2</sup></b></li>
+								<li>Супер-уборка: <b>от 200 р/м<sup>2</sup></b></li>
+								<li>Послестрой: <b>от 250 р/м<sup>2</sup></b></li>
+								<li>Экстрим-уборка: <b>индивидуальный расчет</b></li>
+							</ul>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 card__item price__item">
+						<div class="card__item-img" style='background-image: url(assets/img/price/2.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title price__item-title">Уборка в комнате</div>
+							<ul class="card__item-list">
+								<li>Поддерживающая уборка: <b>от 50 р/м<sup>2</sup></b></li>
+								<li>Генеральная уборка: <b>от 100 р/м<sup>2</sup></b></li>
+								<li>Супер-уборка: <b>от 200 р/м<sup>2</sup></b></li>
+								<li>Послестрой: <b>от 250 р/м<sup>2</sup></b></li>
+								<li>Экстрим-уборка: <b>индивидуальный расчет</b></li>
+							</ul>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 card__item price__item">
+						<div class="card__item-img" style='background-image: url(assets/img/price/3.jpg)'>
+							<div class="card__item-time">
+								<svg class='time'>
+									<use xlink:href='assets/sprite.svg#time'></use>
+								</svg>
+								<span>2 - 4 часа</span>
+							</div>
+						</div>
+						<div class="card__item-bottom">
+							<div class="card__item-title price__item-title">Уборка на кухне</div>
+							<ul class="card__item-list">
+								<li>Поддерживающая уборка: <b>от 50 р/м<sup>2</sup></b></li>
+								<li>Генеральная уборка: <b>от 100 р/м<sup>2</sup></b></li>
+								<li>Супер-уборка: <b>от 200 р/м<sup>2</sup></b></li>
+								<li>Послестрой: <b>от 250 р/м<sup>2</sup></b></li>
+								<li>Экстрим-уборка: <b>индивидуальный расчет</b></li>
+							</ul>
+							<button class="button card__item-button" data-toggle='modal' data-target='#popup-call'>Заказать
+								уборку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row footer__top">
+				<div class="col-12 col-md-4 col-lg-3">
+					<a href="#home" class="scroll logo-wrapper">
+						<picture>
+							<source srcset="assets/img/logo.svg" type="image/webp"><img src="assets/img/logo.svg" alt="logo"
+								width="32" class="logo"></picture>
+						<div class="right">
+							<p>Bubble Fresh</p>
+							<small>Клининг у Вас дома!</small>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-md-8 col-lg-5 footer__text">
+					Уборка осуществляется в любое время 24/7
+				</div>
+				<ul class="col-12 col-md-4 menu footer__menu">
+					<li><a href="#advantages">Преимущества</a></li>
+					<li><a href="#prices">Прайс</a></li>
+					<li><a href="#plans">Виды уборки</a></li>
+					<li><a href="#footer">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__middle">
+				<div class="footer__tel">
+					Телефон:
+					<a href="tel:71111111">+7 111 11 11</a>
+				</div>
+				<div class="footer__time">
+					Приём заявок с 09:00 до 21:00
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<!-- <a href="#">Политика конфиденциальности</a> -->
+				<span>Представленная информация на сайте не является публичной офертой</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Заказать звонок -->
+	<div class="modal fade popup popup-call" id="popup-call" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog popup__dialog" role="document">
+			<div class="modal-content popup__content">
+				<div class="popup__close close" data-dismiss="modal">&times;</div>
+				<div class="popup__title">
+					Заполните форму ниже и мы перезвоним <br>
+					Вам за 5 минут
+				</div>
+				<form class="popup__form form">
+					<span style="display: none;">
+						<input type="hidden" class="modal__info">
+					</span>
+					<span>
+						<input name="name" type="text" placeholder="Ваше имя">
+					</span>
+					<span>
+						<input name="phone" type="tel" placeholder="Ваш телефон" required>
+					</span>
+					<button type="submit" class="button submit">
+						Перезвоните мне
+					</button>
+					<small>Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку <br>
+						Ваших данных.</small>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно благодарности -->
+	<div class="modal fade popup-thank" id="popup-thank" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog popup__dialog" role="document">
+			<div class="modal-content popup__content">
+				<div class="popup__close close" data-dismiss="modal">&times;</div>
+				<div class="popup__title">
+					Мы перезвоним Вам за 5&nbsp;минут
+				</div>
+				<button class="popup-thank__button button" data-dismiss="modal">Хорошо</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Общие скрипты -->
+	<script src='assets/js/vendor.min.js'></script>
+
+	<!-- Основной js файл -->
+	<script src='assets/js/script.js'></script>
+
+
+</body>
+
+</html>
